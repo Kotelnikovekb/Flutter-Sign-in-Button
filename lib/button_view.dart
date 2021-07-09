@@ -257,6 +257,17 @@ class SignInButton extends StatelessWidget {
           padding: padding,
           shape: shape,
         );
+        case Buttons.VK:
+        return SignInButtonBuilder(
+          key: ValueKey("VK"),
+          mini: mini,
+          text: text ?? 'Sign in with VK',
+          icon: FontAwesomeIcons.vk,
+          backgroundColor: Color(0xff4376a6),
+          onPressed: onPressed,
+          padding: padding,
+          shape: shape,
+        );
       case Buttons.Email:
       default:
         return SignInButtonBuilder(
